@@ -36,7 +36,8 @@ Samples of P.elegans and P.dumerilii were collected for bulk RNA sequencing duri
 
 ## Improvement of <em>de novo</em> transcriptome assemblies
 Workflow for this part of analysis:
-![](01_02_workflow.png) 
+![](01_02_workflow.png)
+
 Alternative decontamination method with [Kraken2](https://github.com/DerrickWood/kraken2) (v.2.1.2) was used to improve decontamination quality. Commands were performed on supervisors server due to high computational demands of this part of analysis. Scripts used for decontamination can be found in **01_02_decontamination_assembly\01_kraken2** folder. Kraken2 reports visualisation performed online with [Pavian](https://fbreitwieser.shinyapps.io/pavian/).
 ![](kraken2_decontamination_example.png) 
 
@@ -51,8 +52,9 @@ We can clearly see that decontamination with KRAKEN2 and clusterisation of 2 dif
 
 ## Transcriptomes annotation
 Visualisation of forkflow:
-![](03_workflow.png) 
-[eggNOG-mapper](http://eggnog-mapper.embl.de/)(default settings) and [HMMsearch](https://github.com/EddyRivasLab/hmmer)(e-value<10-e3) against the PfamA database were used for transcriptomes annotation and protein domains identification. Orthogroups identification between Annelida species studied and various metazoan species was carried out with reference proteomes from UniProt database  and proteinortho and OrthoFinder software. Commands and detailed descriptions for this part of analysis can be found in **03_annotation** folder.
+![](03_workflow.png)
+
+[eggNOG-mapper](http://eggnog-mapper.embl.de/)(default settings) and [HMMsearch](https://github.com/EddyRivasLab/hmmer)(e-value<1-e3) against the PfamA database were used for transcriptomes annotation and protein domains identification. Orthogroups identification between Annelida species studied and various metazoan species was carried out with reference proteomes from UniProt database  and proteinortho and OrthoFinder software. Commands and detailed descriptions for this part of analysis can be found in **03_annotation** folder.
 Reference proteomes that were used (protein length >100 aminoacids to match TransDecoder output, BUSCO proteome completeness > 90%):
 - Apis mellifera (Insecta, outgroup)
 - Homo sapiens (outgroup)
