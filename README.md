@@ -1,3 +1,4 @@
+
 # Analysis of developmental gene expression dynamics during anterior and posterior regeneration of Platynereis dumerilii (Nereididae, Annelida) and Pygospio elegans (Spionidae, Annelida).
 
 Authors: 
@@ -66,19 +67,42 @@ Reference proteomes that were used (protein length >100 aminoacids to match Tran
 - Dimorphilus gyrociliatus (Annelida)
 - Owenia fusiformis (Annelida)
 
-Heatmap visualisation for number of pairwise orthologs found between species with proteinortho:
-![](orthologs_heatmap.png)\
+Heatmap visualisation for number of pairwise orthologs found between species with proteinortho:\
+![](orthologs_heatmap.png)
 
 We can see that number of orthologs between evolutionary close species is higher. The abnormally high number of orthologs between most species and C.gigas is probably due to the large size of C.gigas proteome (>70k proteins).  
 
 ## Phylogenetic analysis
 Visualisation of forkflow:\
-![](04_workflow.png)\
+![](04_workflow.png)
 
+\
+For 2 homeobox gene families (NKX2 and PBX) with meaningful orthologs according to Orthofinder or proteinortho phylogenetic analysis was performed. 
+These gene families were chosen because they exhibit interesting expression patterns according to differential expression analysis. PBX1-like genes expressed during anterior regeneration in P.elegans but not P.dumerilii. NKX2-like genes play role in central neural system developement, different genes from these family expressed during anterior or posterior regeneration in both Annelids.
 
-For 2 homeobox gene families (NKX2 and PBX) with meaningful orthologs according to Orthofinder or proteinortho phylogenetic analysis was performed. Multiple protein alignment generated with [MAFFT online servise](https://mafft.cbrc.jp/alignment/server/). Model selection and phylogenetic tree construction performed in [IQ-TREE](https://github.com/iqtree/iqtree2)(v.2.2.2.3). For tree visualisation [FigTree](http://tree.bio.ed.ac.uk/software/figtree/) (v.1.4.4) used. Сommands and detailed descriptions for this part of analysis can be found in **04_phylogeny** folder.
+Multiple protein alignment generated with [MAFFT online servise](https://mafft.cbrc.jp/alignment/server/) using additional homologues from PSI-BLAST to improve the quality of alignment between genes of evolutionarily distant species. Model selection and phylogenetic tree construction performed in [IQ-TREE](https://github.com/iqtree/iqtree2)(v.2.2.2.3). For tree visualisation [FigTree](http://tree.bio.ed.ac.uk/software/figtree/) (v.1.4.4) used. eggNOG short gene names and data about gene expression clusters from Clust were manually added in FigTree. Сommands and detailed descriptions for this part of analysis can be found in **04_phylogeny** folder.
+
+Phylogenetic tree for PBX-like genes:
+![](pbx_aligned.fasta.contree.png)
+<center>node values - bootstrap support (% of 1000) </center>
+<center> gene names determined according to eggNOG annotation and orthogroups</center> 
+<center> several intraspecies branches collapsed for better visualisation</center>
+We see that the architecture of this tree corresponds to the generally accepted ideas about the Spiralia evolution (O.fusiformis is a most basal Annelida, P.elegans close to C.teleta, Annelida and Mollusca are monophyletic groups). Interestingly, the only PBX-4-like gene among Spiralia has been identified in P.elegans, its role in anterior regeneration requires further evaluation.
 
 Phylogenetic tree for NKX2-like genes:
+![](nkx2_aligned.fasta_annot.contree.png)
+<center>node values - bootstrap support (% of 1000) </center>
+<center> gene names determined according to eggNOG annotation and orthogroups</center> 
+<center> several intraspecies branches collapsed for better visualisation</center>
+We see more complex architecture with precense of 3 paralogous NKX2-like genes groups in P.dumerilii and P.elegans. Low bootstrap support for NKX2-1-like genes phylogeny probably related to low numbers of identified orthologs in Spiralia for these genes and requires further evaluation.
+
+## Future plans
+
+- In order to reduce the artificial redundancy of the combined assembly of the transcriptome, we will test a new approach based on the construction of protein clusters, followed by the selection of a representative sequence in each cluster
+- Comparison of protein-protein interactions and protein spatial structures for differentially expressed homeobox proteins in P.elegans and P.dumerillii
+- Expression analysis of other regeneration/development-related genes 
+- Determining the phylogenetic origin of genes related to development using [phylostratigraphy techniques](https://github.com/arendsee/phylostratr) 
+
 
 
 
