@@ -67,12 +67,15 @@ Reference proteomes that were used (protein length >100 aminoacids to match Tran
 - Owenia fusiformis (Annelida)
 
 Heatmap visualisation for number of pairwise orthologs found between species with proteinortho:
-![](orthologs_heatmap.png) 
+![](orthologs_heatmap.png)\
+
 We can see that number of orthologs between evolutionary close species is higher. The abnormally high number of orthologs between most species and C.gigas is probably due to the large size of C.gigas proteome (>70k proteins).  
 
 ## Phylogenetic analysis
-Visualisation of forkflow:
-![](04_workflow.png) 
+Visualisation of forkflow:\
+![](04_workflow.png)\
+
+
 For 2 homeobox gene families (NKX2 and PBX) with meaningful orthologs according to Orthofinder or proteinortho phylogenetic analysis was performed. Multiple protein alignment generated with [MAFFT online servise](https://mafft.cbrc.jp/alignment/server/). Model selection and phylogenetic tree construction performed in [IQ-TREE](https://github.com/iqtree/iqtree2)(v.2.2.2.3). For tree visualisation [FigTree](http://tree.bio.ed.ac.uk/software/figtree/) (v.1.4.4) used. Сommands and detailed descriptions for this part of analysis can be found in **04_phylogeny** folder.
 
 Phylogenetic tree for NKX2-like genes:
