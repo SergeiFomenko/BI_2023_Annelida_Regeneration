@@ -84,16 +84,12 @@ Multiple protein alignment generated with [MAFFT online servise](https://mafft.c
 
 Phylogenetic tree for PBX-like genes:
 ![](pbx_aligned.fasta.contree.png)
-<center>node values - bootstrap support (% of 1000) </center>
-<center> gene names determined according to eggNOG annotation and orthogroups</center> 
-<center> several intraspecies branches collapsed for better visualisation</center>
+
 We see that the architecture of this tree corresponds to the generally accepted ideas about the Spiralia evolution (O.fusiformis is a most basal Annelida, P.elegans close to C.teleta, Annelida and Mollusca are monophyletic groups). Interestingly, the only PBX-4-like gene among Spiralia has been identified in P.elegans, its role in anterior regeneration requires further evaluation.
 
 Phylogenetic tree for NKX2-like genes:
 ![](nkx2_aligned.fasta_annot.contree.png)
-<center>node values - bootstrap support (% of 1000) </center>
-<center> gene names determined according to eggNOG annotation and orthogroups</center> 
-<center> several intraspecies branches collapsed for better visualisation</center>
+
 We see more complex architecture with precense of 3 paralogous NKX2-like genes groups in P.dumerilii and P.elegans. Low bootstrap support for NKX2-1-like genes phylogeny probably related to low numbers of identified orthologs in Spiralia for these genes and requires further evaluation.
 
 ## Future plans
